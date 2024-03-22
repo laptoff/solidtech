@@ -17,7 +17,83 @@ html body .Main{
 
 .header {
     width: 100%;
-    height: 50px;
-    background-color: rgb(12, 12, 139);
+    height: 75px;
+    background-color: rgb(6, 6, 48);
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 75%;
+    width: auto;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo_icon, h1{
+    font-size: 225%;
+    color: white;
+}
+
+.nav{
+    height: 75%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px 0 2px;
+    padding: 0 5px 0 5px;
+    color: white;
+    height: 75%;
+    width: auto;
+    cursor: pointer;
+}
+
+.nav ul li:hover{
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
+}
+
+.search_connection{
+    height: 75%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_icon, .connection_icon{
+    color: white;
+    font-size: 200%;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.search_icon:hover{
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
+}
+
+.connection_icon:hover{
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
 }
