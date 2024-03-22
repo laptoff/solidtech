@@ -1,0 +1,16 @@
+html body{
+    background: linear-gradient(to bottom right, blue, green);
+    margin: 0;
+    padding: 0;
+}
+
+html body::-webkit-scrollbar{
+    display: none;
+}
+
+html body .Main{
+    margin: 5px;
+    height: 100vh;
+    background-color: white;
+    border-radius: 10px;
+}
