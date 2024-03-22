@@ -3,6 +3,7 @@ html body{
     border-color: rgb(178, 189, 159);
     height: 100vh;
     background-color: rgb(178, 189, 159);
+    font-family: 'Brush Script MT', cursive;
 }
 
 html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
@@ -90,7 +91,8 @@ html body .Main{
     color: white;
     font-size: 200%;
     cursor: pointer;
-    padding: 5px;
+    padding: 5px 20px 5px 20px;
+    margin-right: 10px;
 }
 
 .search_icon:hover{
