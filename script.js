@@ -8,13 +8,13 @@ navHomeButton.addEventListener("click", (event) => {
 });
 
 navStoreButton.addEventListener("click", (event) => {
-    document.location.href="store.html";
+    document.location.href="otherPages/store.html";
 });
 
 navProjectsButton.addEventListener("click", (event) => {
-    document.location.href="projects.html";
+    document.location.href="otherPages/projects.html";
 });
 
 navContactButton.addEventListener("click", (event) => {
-    document.location.href="contact.html";
+    document.location.href="otherPages/contact.html";
 });
