@@ -4,7 +4,7 @@ const navNosProjetsButton = document.getElementById("navNosProjetsButton");
 const navContactButton = document.getElementById("navContactButton");
 
 navHomeButton.addEventListener("click", (event) => {
-    document.location.href="index.html";
+    document.location.href="Autofish.html";
 });
 
 navStoreButton.addEventListener("click", (event) => {
