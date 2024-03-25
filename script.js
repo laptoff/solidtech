@@ -2,6 +2,7 @@ const navHomeButton = document.getElementById("navHomeButton");
 const navStoreButton = document.getElementById("navStoreButton");
 const navProjectsButton = document.getElementById("navProjectsButton");
 const navContactButton = document.getElementById("navContactButton");
+const navLogo = document.getElementById("logo");
 
 navHomeButton.addEventListener("click", (event) => {
     document.location.href="index.html";
@@ -17,4 +18,8 @@ navProjectsButton.addEventListener("click", (event) => {
 
 navContactButton.addEventListener("click", (event) => {
     document.location.href="otherPages/contact.html";
+});
+
+navLogo.addEventListener("click", (event) => {
+    document.location.href="index.html";
 });
