@@ -1,9 +1,10 @@
 html body{
     margin: 0 10px 10px 10px;
     border-color: rgb(170, 189, 159);
-    height: 100vh;
+    height: 200vh;
     background-color: rgb(170, 189, 159);
-    font-family: 'Univers';
+    font-family: 'Brush Script MT', cursive;
+    
 }
 
 html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
@@ -15,21 +16,19 @@ html body .Main{
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(110,130,120);
+    background-color: rgba(49, 78, 49, 0.301);
     border-radius: 0 0 10px 10px;
 }
 
 .header {
     position: absolute;
-    width: 95%;
-    height: 75px;
+    width: 85%;
+    height: 70px;
     background-color: rgba(34, 134, 34, 0.301);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 12px 12px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: solid 5px;
-    border-color: rgba(34, 134, 34, 0.301);
 }
 
 .logo{
@@ -61,16 +60,16 @@ html body .Main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5px 0 5px;
-    padding: 0 20px 0 20px;
-    color: white;
+    margin: 0 10px 0 10px;
+    padding: 0 40px 0 40px;
+    color: floralwhite;
     height: 75%;
-    width: auto;
+    width: 75px;
     cursor: pointer;
 }
 
 .nav ul li:hover{
-    background-color: rgba(90, 140, 140, 0.219);
+    background-color: rgba(37, 37, 37, 0.075);
     border-radius: 8px;
 }
 
@@ -91,11 +90,11 @@ html body .Main{
 }
 
 .search_icon:hover{
-    background-color: rgba(128, 128, 128, 0.219);
+    background-color: rgba(37, 37, 37, 0.075);
     border-radius: 8px;
 }
 
 .connection_icon:hover{
-    background-color: rgba(128, 128, 128, 0.219);
+    background-color: rgba(37, 37, 37, 0.075);
     border-radius: 8px;
 }

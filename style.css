@@ -3,9 +3,8 @@ html body{
     border-color: rgb(178, 189, 159);
     height: 100vh;
     background-color: rgb(178, 189, 159);
-    font-family: 'Brush Script MT', cursive;
+    font-family:  'Brush Script MT', cursive;
 }
-
 html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     display: none;
 }
