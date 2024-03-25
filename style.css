@@ -72,6 +72,7 @@ html body .Main{
     height: 75%;
     width: auto;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .nav ul li:hover{
@@ -93,6 +94,7 @@ html body .Main{
     cursor: pointer;
     padding: 5px 20px 5px 20px;
     margin-right: 10px;
+    transition: 0.5s;
 }
 
 .search_icon:hover{
