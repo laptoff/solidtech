@@ -27,8 +27,8 @@ html body .Main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: solid 5px;
-    border-color: rgb(178, 189, 159);
+    /* border-top: solid 5px;
+    border-color: rgb(178, 189, 159); */
 }
 
 .logo{
@@ -72,6 +72,7 @@ html body .Main{
     width:100px;
     cursor: pointer;
     transition: 0.5s;
+    font-size: 25px;
 }
 
 .nav ul li:hover{

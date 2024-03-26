@@ -5,21 +5,21 @@ const navContactButton = document.getElementById("navContactButton");
 const navLogo = document.getElementById("logo");
 
 navHomeButton.addEventListener("click", (event) => {
-    document.location.href="index.html";
+    document.location.href="../index.html";
 });
 
 navStoreButton.addEventListener("click", (event) => {
-    document.location.href="otherPages/store.html";
+    document.location.href="../otherPages/store.html";
 });
 
 navProjectsButton.addEventListener("click", (event) => {
-    document.location.href="otherPages/projects.html";
+    document.location.href="../otherPages/projects.html";
 });
 
 navContactButton.addEventListener("click", (event) => {
-    document.location.href="otherPages/contact.html";
+    document.location.href="../otherPages/contact.html";
 });
 
 navLogo.addEventListener("click", (event) => {
-    document.location.href="index.html";
+    document.location.href="../index.html";
 });
