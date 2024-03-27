@@ -3,18 +3,18 @@ const navShopButton = document.getElementById("navShopButton");
 const navNosProjetsButton = document.getElementById("navNosProjetsButton");
 const navContactButton = document.getElementById("navContactButton");
 
-navHomeButton.addEventListener("click", (event) => {
-    document.location.href="../Autofish.html";
+navAccueilButton.addEventListener("click", (event) => {
+    document.location.href="./Autofish.html";
 });
 
-navStoreButton.addEventListener("click", (event) => {
-    document.location.href="store.html";
+navShopButton.addEventListener("click", (event) => {
+    document.location.href="./OtherFishPages/Shop.html";
 });
 
-navProjectsButton.addEventListener("click", (event) => {
-    document.location.href="projects.html";
+navNosProjetsButton.addEventListener("click", (event) => {
+    document.location.href="./OtherFishPages/NosProjets.html";
 });
 
 navContactButton.addEventListener("click", (event) => {
-    document.location.href="contact.html";
+    document.location.href="./OtherFishPages/Contact.html";
 });

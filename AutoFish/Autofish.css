@@ -1,7 +1,7 @@
 html body{
     margin: 0 10px 10px 10px;
     border-color: rgb(170, 189, 159);
-    height: 200vh;
+    height: 300vh;
     background-color: rgb(170, 189, 159);
     font-family: 'Brush Script MT', cursive;
     
@@ -36,7 +36,7 @@ html body .Main{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 35px;
+    font-size: 40px;
     color: white;
 }
 
@@ -64,8 +64,10 @@ html body .Main{
     padding: 0 40px 0 40px;
     color: floralwhite;
     height: 75%;
-    width: 75px;
+    width: 120px;
     cursor: pointer;
+    font-size: 30px;
+    transition: all 400ms;
 }
 
 .nav ul li:hover{
@@ -79,6 +81,7 @@ html body .Main{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 400ms;
 }
 
 .search_icon, .connection_icon{
@@ -87,6 +90,7 @@ html body .Main{
     cursor: pointer;
     padding: 5px 20px 5px 20px;
     margin-right: 10px;
+    transition: all 400ms;
 }
 
 .search_icon:hover{
