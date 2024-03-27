@@ -106,3 +106,7 @@ html body .Main{
     background-color: rgba(128, 128, 128, 0.219);
     border-radius: 8px;
 }
+
+.connection_popup{
+    display: none;
+}
