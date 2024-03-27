@@ -11,7 +11,7 @@
         <div class="header">
             <div id="logo" class="logo">
                 <ion-icon class="logo_icon" name="hardware-chip-outline"></ion-icon>
-                <h1>SolidTech</h1>
+                <h1 class="title_logo">SolidTech</h1>
             </div>
             <div class="nav">
                 <ul>
@@ -27,12 +27,39 @@
             </div>
         </div>
 
-        <div class="connection_popup">
-            <ion-icon class="close-icon" name="close-outline"></ion-icon>
-            <p>Connection</p>
-            <form action="">
-                <input class="input_mail" type="email">
-                <input class="input_password" type="password">
+        <div class="connection_popup connection_popup_active">
+            
+            <form class="connection_form" action="">
+
+                <div class="connection_header">
+                    <div class="div_for_center"></div>
+
+                    <div class="connection_title_wrap">
+                        <h1 class="connection_title">Login</h1>
+                    </div>
+
+                    <div class="connection_cross">
+                        <ion-icon class="close_icon" name="close-outline"></ion-icon>
+                    </div>
+                </div>
+
+                
+
+                <div class="mail_input inputs">
+                    <input class="input_mail" type="email" placeholder="Mail">
+                </div>
+                <div class="password_input inputs">
+                    <input class="input_password" type="password" placeholder="Mot de passe" required>
+                </div>
+
+                <div class="register_wrap">
+                    <p>Vous avez déjà un compte? <span class="register">Inscrivez-vous !</span></p>
+                </div>
+
+                <div class="confirm_button_warp">
+                    <ion-icon class="confirm_button" name="play-outline"></ion-icon>
+                </div>
+                
             </form>
         </div>
 

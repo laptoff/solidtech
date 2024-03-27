@@ -12,14 +12,16 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 html body .Main{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    background-color: black;
     border-radius: 0 0 5px 5px;
+    background-image: url(https://cdn.pixabay.com/photo/2023/09/18/11/23/ai-generated-8260197_1280.jpg);
 }
 
 .header {
     position: fixed;
+    top: 0%;
     width: 95%;
     height: 75px;
     background-color: rgba(64, 64, 94, 0.301);
@@ -40,7 +42,7 @@ html body .Main{
     cursor: pointer;
 }
 
-.logo_icon, h1{
+.logo_icon, .title_logo{
     font-size: 225%;
     color: white;
 }
@@ -108,5 +110,110 @@ html body .Main{
 }
 
 .connection_popup{
-    display: none;
+    position: absolute;
+    transition: all 0.5s;
+    width: 0;
+    height: 0;
+    background-color: rgba(106, 124, 139, 0.281);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.connection_popup_active{
+    width: 25%;
+    height: 35%;
+}
+
+.connection_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connection_header{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection_cross{
+    width: 100px;
+    display: flex;
+    justify-content: end;
+}
+
+.div_for_center{
+    width: 100px;
+}
+
+.close_icon{
+    margin: 10px 10px 0 0;
+    font-size: 40px;
+}
+
+.connection_title_wrap{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.connection_title{
+    color: white;
+}
+
+.inputs{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.inputs input{
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(106, 124, 139, 0.651);
+    border-radius: 15px;
+    padding: 2.5px 20px 2.5px 10px;
+}
+
+.inputs input::placeholder{
+    text-align: center;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.register_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19%;
+}
+
+.register{
+    color: white;
+    cursor: pointer;
+}
+
+.confirm_button_warp{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.confirm_button{
+    font-size: 20px;
+    background-color: rgb(56, 56, 165);
+    padding: 10px;
+    border-radius: 10px 0 10px ;
+    cursor: pointer;
 }
