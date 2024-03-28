@@ -152,8 +152,15 @@ html body .Main{
 }
 
 .close_icon{
-    margin: 10px 10px 0 0;
-    font-size: 40px;
+    font-size: 35px;
+    background-color: rgb(56, 56, 165);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.close_icon:hover{
+    background-color: rgb(48, 48, 114);
 }
 
 .connection_title_wrap{
@@ -196,7 +203,7 @@ html body .Main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 19%;
+    height: 17%;
 }
 
 .register{
@@ -211,13 +218,13 @@ html body .Main{
 }
 
 .confirm_button{
-    font-size: 20px;
+    font-size: 35px;
     background-color: rgb(56, 56, 165);
     padding: 10px;
-    border-radius: 10px 0 10px ;
+    border-top-left-radius: 10px;
     cursor: pointer;
 }
 
 .confirm_button:hover{
-  background-color: blue;
+    background-color: rgb(48, 48, 114);
 }
