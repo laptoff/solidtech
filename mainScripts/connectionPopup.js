@@ -9,20 +9,20 @@ const confirmButton = document.getElementById("confirm_button_warp");
 
 cross.addEventListener("click", (event) => {
     connectionPopup.classList.remove("connection_popup_active");
-    cross.classList.remove("active");
-    connectionTitle.classList.remove("active");
-    inputsMail.classList.remove("active");
-    inputsPassword.classList.remove("active");
-    registerWrap.classList.remove("active");
-    confirmButton.classList.remove("active");
+    cross.classList.remove("connection_cross_active");
+    connectionTitle.classList.remove("connection_title_wrap_active");
+    inputsMail.classList.remove("inputs_active");
+    inputsPassword.classList.remove("inputs_active");
+    registerWrap.classList.remove("register_wrap_active");
+    confirmButton.classList.remove("confirm_button_warp_active");
 });
 
 connectionButton.addEventListener("click", (event) => {
     connectionPopup.classList.add("connection_popup_active");
-    cross.classList.add("active");
-    connectionTitle.classList.add("active");
-    inputsMail.classList.add("active");
-    inputsPassword.classList.add("active");
-    registerWrap.classList.add("active");
-    confirmButton.classList.add("active");
+    cross.classList.add("connection_cross_active");
+    connectionTitle.classList.add("connection_title_wrap_active");
+    inputsMail.classList.add("inputs_active");
+    inputsPassword.classList.add("inputs_active");
+    registerWrap.classList.add("register_wrap_active");
+    confirmButton.classList.add("confirm_button_warp_active");
 });

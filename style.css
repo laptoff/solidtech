@@ -142,12 +142,11 @@ html body .Main{
 }
 
 .connection_cross{
-    width: 100px;
-    height: 40%;
+    width: 0;
+    height: 0;
     display: flex;
     justify-content: end;
-    display: none;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .div_for_center{
@@ -167,11 +166,10 @@ html body .Main{
 }
 
 .connection_title_wrap{
-    width: 100px;
+    width: 0;
     display: flex;
     justify-content: center;
-    display: none;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .connection_title{
@@ -179,13 +177,12 @@ html body .Main{
 }
 
 .inputs{
-    width: 90%;
+    width: 0;
+    height: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
-    display: none;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .inputs input{
@@ -206,13 +203,12 @@ html body .Main{
 }
 
 .register_wrap{
-    width: 100%;
+    width: 0;
+    height: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 17%;
-    display: none;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .register{
@@ -221,12 +217,11 @@ html body .Main{
 }
 
 .confirm_button_warp{
-    width: 100%;
-    height: 12%;
+    width: 0;
+    height: 0;
     display: flex;
     justify-content: end;
-    display: none;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .confirm_button{
@@ -241,6 +236,26 @@ html body .Main{
     background-color: rgb(48, 48, 114);
 }
 
-.active{
-    display: flex;
+.connection_cross_active{
+    width: 100px;
+    height: 40%;
+}
+
+.connection_title_wrap_active{
+    width: 100px;
+}
+
+.inputs_active{
+    width: 90%;
+    height: 20%;
+}
+
+.register_wrap_active{
+    width: 100%;
+    height: 17%;
+}
+
+.confirm_button_warp_active{
+    width: 100%;
+    height: 12%;
 }
