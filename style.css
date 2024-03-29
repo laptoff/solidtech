@@ -146,6 +146,8 @@ html body .Main{
     height: 40%;
     display: flex;
     justify-content: end;
+    display: none;
+    transition: all 0.5s;
 }
 
 .div_for_center{
@@ -168,6 +170,8 @@ html body .Main{
     width: 100px;
     display: flex;
     justify-content: center;
+    display: none;
+    transition: all 0.5s;
 }
 
 .connection_title{
@@ -180,6 +184,8 @@ html body .Main{
     justify-content: center;
     align-items: center;
     height: 20%;
+    display: none;
+    transition: all 0.5s;
 }
 
 .inputs input{
@@ -205,6 +211,8 @@ html body .Main{
     justify-content: center;
     align-items: center;
     height: 17%;
+    display: none;
+    transition: all 0.5s;
 }
 
 .register{
@@ -217,6 +225,8 @@ html body .Main{
     height: 12%;
     display: flex;
     justify-content: end;
+    display: none;
+    transition: all 0.5s;
 }
 
 .confirm_button{
@@ -229,4 +239,8 @@ html body .Main{
 
 .confirm_button:hover{
     background-color: rgb(48, 48, 114);
+}
+
+.active{
+    display: flex;
 }
