@@ -23,11 +23,11 @@
             </div>
             <div class="search_connection">
                 <ion-icon class="search_icon" name="search"></ion-icon>
-                <ion-icon class="connection_icon" name="person"></ion-icon>
+                <ion-icon id="connection_icon" class="connection_icon" name="person"></ion-icon>
             </div>
         </div>
 
-        <div class="connection_popup connection_popup_active">
+        <div id="connection_popup" class="connection_popup">
             
             <form class="connection_form" action="">
 
@@ -38,7 +38,7 @@
                         <h1 class="connection_title">Login</h1>
                     </div>
 
-                    <div class="connection_cross">
+                    <div id="cross_icon" class="connection_cross">
                         <ion-icon class="close_icon" name="close-outline"></ion-icon>
                     </div>
                 </div>
@@ -66,7 +66,8 @@
     </div>
 </body>
 
-<script src="script.js"></script>
+<script src="/mainScripts/connectionPopup.js"></script>
+<script src="/mainScripts/navBar.js"></script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
