@@ -5,26 +5,32 @@
 
 html body{
     margin: 0 5px 5px 5px;
-    border-color: rgb(178, 189, 159);
+    border-color: rgb(0, 0, 0);
     height: 100vh;
-    background-color: rgb(178, 189, 159);
+    background-color: rgb(0, 0, 0);
     font-family:  'Brush Script MT', cursive;
+}
+
+html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
+    display: none;
 }
 
 .Main {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(179, 179, 179);
     border-radius: 0 0 5px 5px;
 }
 
 .header {
     position: fixed;
+    top: 0%;
     width: 95%;
     height: 75px;
-    background-color: rgba(64, 64, 94, 0.301);
+    background-color: rgba(0, 0, 0, 0.685);
     border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: space-between;
@@ -48,11 +54,11 @@ html body{
 }
 
 .logo:hover .logo_icon{
-    color:rgba(4, 238, 255, 0.295);
+    color:rgb(136, 136, 136);
 }
 
 .logo:hover h1{
-    color:rgba(4, 238, 255, 0.295);
+    color:rgb(136, 136, 136);
 }
 
 .nav{
@@ -86,7 +92,7 @@ html body{
 }
 
 .nav ul li:hover{
-    color: rgba(4, 238, 255, 0.295);
+    color: rgb(136, 136, 136);
 }
 
 .search_connection{
@@ -107,9 +113,161 @@ html body{
 }
 
 .search_icon:hover{
-    color: rgba(4, 238, 255, 0.295);
+    color: rgb(136, 136, 136);
 }
 
 .connection_icon:hover{
-    color: rgba(4, 238, 255, 0.295);
+    color: rgb(136, 136, 136);
+}
+
+.connection_popup{
+    position: absolute;
+    transition: all 0.5s;
+    width: 0;
+    height: 0;
+    background-color: rgba(5, 5, 5, 0.281);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.connection_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connection_header{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection_cross{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: end;
+    transition: all 0.7s;
+}
+
+.div_for_center{
+    width: 100px;
+}
+
+.close_icon{
+    background-color: rgb(56, 56, 165);
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+}
+
+.close_icon:hover{
+    background-color: rgb(56, 56, 165);
+}
+
+.connection_title_wrap{
+    width: 0;
+    display: flex;
+    justify-content: center;
+    transition: all 0.7s;
+}
+
+.connection_title{
+    color: rgb(255, 255, 255);
+}
+
+.inputs{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+}
+
+.inputs input{
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(56, 56, 165);
+    border-radius: 15px;
+    padding: 2.5px 20px 2.5px 10px;
+}
+
+.inputs input::placeholder{
+    text-align: center;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.register_wrap{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+    font-size: 22px;
+}
+
+.register{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.confirm_button_warp{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: end;
+    transition: all 0.7s;
+}
+
+.confirm_button{
+    background-color: rgb(56, 56, 165);
+    border-top-left-radius: 10px;
+    height: 100%;
+    width: 12%;
+    cursor: pointer;
+}
+
+.confirm_button:hover{
+    background-color: rgb(48, 48, 114);
+}
+
+.connection_popup_active{
+    width: 25%;
+    height: 35%;
+}
+
+.connection_cross_active{
+    width: 100px;
+    height: 40%;
+}
+
+.connection_title_wrap_active{
+    width: 100px;
+}
+
+.inputs_active{
+    width: 90%;
+    height: 20%;
+}
+
+.register_wrap_active{
+    width: 100%;
+    height: 17%;
+}
+
+.confirm_button_warp_active{
+    width: 100%;
+    height: 12%;
 }
