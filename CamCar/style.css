@@ -199,13 +199,18 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     outline: none;
     border: 2px solid rgb(56, 56, 165);
     border-radius: 15px;
-    padding: 2.5px 20px 2.5px 10px;
+    padding: 2.5px 20px 2.5px 10px;  
+    cursor: url("cursor\ text\ .webp");
 }
 
 .inputs input::placeholder{
     text-align: center;
     color: white;
     font-family: 'Brush Script MT', cursive;
+}
+
+.inputs input:focus{
+     text-align: center;
 }
 
 .register_wrap{
