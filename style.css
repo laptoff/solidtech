@@ -16,7 +16,7 @@ html body .Main{
     width: 100%;
     height: 100%;
     border-radius: 0 0 5px 5px;
-    background-image: url(https://cdn.pixabay.com/photo/2023/09/18/11/23/ai-generated-8260197_1280.jpg);
+    background-color: black;
 }
 
 .header {
@@ -149,7 +149,8 @@ html body .Main{
 }
 
 .close_icon{
-    background-color: rgb(56, 56, 165);
+    border-bottom: 2px solid rgba(106, 124, 139, 0.651);
+    border-left: 2px solid rgba(106, 124, 139, 0.651);
     border-bottom-left-radius: 10px;
     height: 100%;
     width: 50%;
@@ -157,7 +158,7 @@ html body .Main{
 }
 
 .close_icon:hover{
-    background-color: rgb(48, 48, 114);
+    background-color: rgba(106, 124, 139, 0.651);
 }
 
 .connection_title_wrap{
@@ -182,19 +183,27 @@ html body .Main{
 
 .inputs input{
     width: 100%;
-    height: 75%;
+    height: 70%;
     background: transparent;
     border: none;
     outline: none;
     border: 2px solid rgba(106, 124, 139, 0.651);
     border-radius: 15px;
-    padding: 2.5px 20px 2.5px 10px;
+    padding: 2.5px 0px 2.5px 10px;
 }
 
 .inputs input::placeholder{
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Brush Script MT', cursive;
+}
+
+.inputs input:focus{
+    text-align: center;
+}
+
+.inputs input:focus::placeholder{
+    color: transparent;
 }
 
 .register_wrap{
@@ -215,20 +224,21 @@ html body .Main{
     width: 0;
     height: 0;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     transition: all 0.7s;
+    margin-bottom: 10px;
 }
 
 .confirm_button{
-    background-color: rgb(56, 56, 165);
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     height: 100%;
-    width: 12%;
+    width: 90%;
     cursor: pointer;
+    border: 2px solid rgba(106, 124, 139, 0.651);
 }
 
 .confirm_button:hover{
-    background-color: rgb(48, 48, 114);
+    background-color: rgba(106, 124, 139, 0.651);
 }
 
 .connection_popup_active{
@@ -252,7 +262,7 @@ html body .Main{
 
 .register_wrap_active{
     width: 100%;
-    height: 17%;
+    height: 10%;
 }
 
 .confirm_button_warp_active{
