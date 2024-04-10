@@ -23,6 +23,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     height: 100%;
     background-color: rgb(179, 179, 179);
     border-radius: 0 0 5px 5px;
+    justify-content: space-between; 
 }
 
 .header {
@@ -35,6 +36,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 2%;
 }
 
 .logo{
@@ -118,6 +120,15 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 
 .connection_icon:hover{
     color: rgb(136, 136, 136);
+}
+
+.connection_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .connection_popup{
@@ -275,4 +286,40 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 .confirm_button_warp_active{
     width: 100%;
     height: 12%;
+}
+
+.robot{
+    background-color: black;
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_ad{
+    background-color: aqua;
+    width: 10%;
+    height: 85%;
+    
+}
+
+.middle{
+    background-color: red;
+    width: 70%;
+    height: 85%;
+    
+}
+
+.right_ad{
+    background-color: aqua;
+    width: 10%;
+    height: 85%;
+}
+
+.AutoFish{
+    width: 100%;
+    height: 30%;
+    margin-top: 10%;
 }
