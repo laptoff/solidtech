@@ -188,15 +188,16 @@ html body .Main{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(106, 124, 139, 0.651);
-    border-radius: 15px;
+    border-bottom: 2px solid rgba(106, 124, 139, 0.651);
     padding: 2.5px 0px 2.5px 10px;
 }
 
 .inputs input::placeholder{
+    position: relative;
     text-align: center;
     color: black;
     font-family: 'Brush Script MT', cursive;
+    transition: all 0.5s;
 }
 
 .inputs input:focus{
@@ -204,7 +205,7 @@ html body .Main{
 }
 
 .inputs input:focus::placeholder{
-    color: transparent;
+    bottom: 25px;
 }
 
 .register_wrap{
