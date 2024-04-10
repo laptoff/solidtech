@@ -118,6 +118,7 @@ html body .Main{
     backdrop-filter: blur(20px);
     border-radius: 25px;
     overflow: hidden;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .connection_form{
