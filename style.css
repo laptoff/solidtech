@@ -1,3 +1,7 @@
+*::selection{
+    background-color: orangered;
+}
+
 html body{
     margin: 0 5px 5px 5px;
     border-color: rgb(178, 189, 159);
@@ -16,7 +20,8 @@ html body .Main{
     width: 100%;
     height: 100%;
     border-radius: 0 0 5px 5px;
-    background-color: black;
+    background: rgb(164,139,139);
+    background: linear-gradient(120deg, rgba(164,139,139,1) 0%, rgba(237,145,83,1) 37%, rgba(198,65,65,1) 100%);
 }
 
 .header {
@@ -24,13 +29,12 @@ html body .Main{
     top: 0%;
     width: 95%;
     height: 75px;
-    background-color: rgba(64, 64, 94, 0.301);
+    background-color: rgba(21, 21, 26, 0.281);
     border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border-top: solid 5px;
-    border-color: rgb(178, 189, 159); */
+    backdrop-filter: blur(20px);
 }
 
 .logo{
@@ -124,42 +128,6 @@ html body .Main{
 .connection_form{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.connection_header{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.connection_cross{
-    width: 0;
-    height: 0;
-    display: flex;
-    justify-content: end;
-    transition: all 0.7s;
-}
-
-.div_for_center{
-    width: 100px;
-}
-
-.close_icon{
-    border-bottom: 2px solid rgba(106, 124, 139, 0.651);
-    border-left: 2px solid rgba(106, 124, 139, 0.651);
-    border-bottom-left-radius: 10px;
-    height: 100%;
-    width: 50%;
-    cursor: pointer;
-}
-
-.close_icon:hover{
-    background-color: rgba(106, 124, 139, 0.651);
 }
 
 .connection_title_wrap{
@@ -173,106 +141,11 @@ html body .Main{
     color: white;
 }
 
-.inputs{
-    position: relative;
-    width: 0;
-    height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.7s;
-}
-
-.inputs input{
-    width: 100%;
-    height: 70%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgba(106, 124, 139, 0.651);
-    padding: 2.5px 0px 2.5px 10px;
-    box-sizing: border-box;
-    outline: none;
-}
-
-.placeholder{
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-family: "Gill Sans", sans-serif;
-    transition: all 0.5s;
-    pointer-events: none;
-}
-
-.inputs input:focus{
-    text-align: center;
-}
-
-.inputs input:focus + .placeholder{
-    bottom: 50px;
-    transition: all 0.5s;
-}
-
-.register_wrap{
-    width: 0;
-    height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.7s;
-}
-
-.register{
-    color: white;
-    cursor: pointer;
-}
-
-.confirm_button_warp{
-    width: 0;
-    height: 0;
-    display: flex;
-    justify-content: center;
-    transition: all 0.7s;
-    margin-bottom: 10px;
-}
-
-.confirm_button{
-    border-radius: 10px;
-    height: 100%;
-    width: 90%;
-    cursor: pointer;
-    border: 2px solid rgba(106, 124, 139, 0.651);
-}
-
-.confirm_button:hover{
-    background-color: rgba(106, 124, 139, 0.651);
-}
-
 .connection_popup_active{
     width: 25%;
-    height: 35%;
-}
-
-.connection_cross_active{
-    width: 100px;
-    height: 40%;
+    height: 50%;
 }
 
 .connection_title_wrap_active{
     width: 100px;
-}
-
-.inputs_active{
-    width: 90%;
-    height: 20%;
-}
-
-.register_wrap_active{
-    width: 100%;
-    height: 10%;
-}
-
-.confirm_button_warp_active{
-    width: 100%;
-    height: 12%;
 }
