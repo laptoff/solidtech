@@ -127,13 +127,31 @@ html body .Main{
     color: rgb(136, 136, 136);
 }
 
-.connection_wrap{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.search_connection{
+    height: 75%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.search_icon, .connection_icon{
+    color: white;
+    font-size: 200%;
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.search_icon:hover{
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
+}
+
+.connection_icon:hover{
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
 }
 
 .connection_popup{
@@ -141,10 +159,11 @@ html body .Main{
     transition: all 0.5s;
     width: 0;
     height: 0;
-    background-color: rgba(5, 5, 5, 0.281);
+    background-color: rgba(106, 124, 139, 0.281);
     backdrop-filter: blur(20px);
     border-radius: 25px;
     overflow: hidden;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .connection_form{
@@ -176,7 +195,8 @@ html body .Main{
 }
 
 .close_icon{
-    background-color: rgb(56, 56, 165);
+    border-bottom: 2px solid rgba(106, 124, 139, 0.651);
+    border-left: 2px solid rgba(106, 124, 139, 0.651);
     border-bottom-left-radius: 10px;
     height: 100%;
     width: 50%;
@@ -184,7 +204,7 @@ html body .Main{
 }
 
 .close_icon:hover{
-    background-color: rgb(56, 56, 165);
+    background-color: rgba(75, 115, 148, 0.651);
 }
 
 .connection_title_wrap{
@@ -195,10 +215,11 @@ html body .Main{
 }
 
 .connection_title{
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 .inputs{
+    position: relative;
     width: 0;
     height: 0;
     display: flex;
@@ -209,24 +230,32 @@ html body .Main{
 
 .inputs input{
     width: 100%;
-    height: 75%;
+    height: 70%;
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgb(56, 56, 165);
-    border-radius: 15px;
-    padding: 2.5px 20px 2.5px 10px;  
-    cursor: url("cursor\ text\ .webp");
+    border-bottom: 2px solid rgba(106, 124, 139, 0.651);
+    padding: 2.5px 0px 2.5px 10px;
+    box-sizing: border-box;
+    outline: none;
 }
 
-.inputs input::placeholder{
+.placeholder{
+    position: absolute;
     text-align: center;
     color: white;
-    font-family: 'Brush Script MT', cursive;
+    font-family: "Gill Sans", sans-serif;
+    transition: all 0.5s;
+    pointer-events: none;
 }
 
 .inputs input:focus{
-     text-align: center;
+    text-align: center;
+}
+
+.inputs input:focus + .placeholder{
+    bottom: 50px;
+    transition: all 0.5s;
 }
 
 .register_wrap{
@@ -236,11 +265,10 @@ html body .Main{
     justify-content: center;
     align-items: center;
     transition: all 0.7s;
-    font-size: 22px;
 }
 
 .register{
-    color: rgb(255, 255, 255);
+    color: white;
     cursor: pointer;
 }
 
@@ -248,20 +276,21 @@ html body .Main{
     width: 0;
     height: 0;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     transition: all 0.7s;
+    margin-bottom: 10px;
 }
 
 .confirm_button{
-    background-color: rgb(56, 56, 165);
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     height: 100%;
-    width: 12%;
+    width: 90%;
     cursor: pointer;
+    border: 2px solid rgba(106, 124, 139, 0.651);
 }
 
 .confirm_button:hover{
-    background-color: rgb(48, 48, 114);
+    background-color: rgba(106, 124, 139, 0.651);
 }
 
 .connection_popup_active{
@@ -285,7 +314,7 @@ html body .Main{
 
 .register_wrap_active{
     width: 100%;
-    height: 17%;
+    height: 10%;
 }
 
 .confirm_button_warp_active{
