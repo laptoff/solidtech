@@ -102,3 +102,193 @@ html body .Main{
     background-color: rgba(37, 37, 37, 0.075);
     border-radius: 8px;
 }
+.search_connection{
+    height: 75%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_icon, .connection_icon{
+    color: white;
+    font-size: 200%;
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.search_icon:hover{
+    color: rgb(136, 136, 136);
+}
+
+.connection_icon:hover{
+    color: rgb(136, 136, 136);
+}
+
+.connection_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connection_popup{
+    position: absolute;
+    transition: all 0.5s;
+    width: 0;
+    height: 0;
+    background-color: rgba(5, 5, 5, 0.281);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.connection_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connection_header{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection_cross{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: end;
+    transition: all 0.7s;
+}
+
+.div_for_center{
+    width: 100px;
+}
+
+.close_icon{
+    background-color: rgb(56, 56, 165);
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+}
+
+.close_icon:hover{
+    background-color: rgb(56, 56, 165);
+}
+
+.connection_title_wrap{
+    width: 0;
+    display: flex;
+    justify-content: center;
+    transition: all 0.7s;
+}
+
+.connection_title{
+    color: rgb(255, 255, 255);
+}
+
+.inputs{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+}
+
+.inputs input{
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(56, 56, 165);
+    border-radius: 15px;
+    padding: 2.5px 20px 2.5px 10px;  
+    cursor: url("cursor\ text\ .webp");
+}
+
+.inputs input::placeholder{
+    text-align: center;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.inputs input:focus{
+     text-align: center;
+}
+
+.register_wrap{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+    font-size: 22px;
+}
+
+.register{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.confirm_button_warp{
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: end;
+    transition: all 0.7s;
+}
+
+.confirm_button{
+    background-color: rgb(56, 56, 165);
+    border-top-left-radius: 10px;
+    height: 100%;
+    width: 12%;
+    cursor: pointer;
+}
+
+.confirm_button:hover{
+    background-color: rgb(48, 48, 114);
+}
+
+.connection_popup_active{
+    width: 25%;
+    height: 35%;
+}
+
+.connection_cross_active{
+    width: 100px;
+    height: 40%;
+}
+
+.connection_title_wrap_active{
+    width: 100px;
+}
+
+.inputs_active{
+    width: 90%;
+    height: 20%;
+}
+
+.register_wrap_active{
+    width: 100%;
+    height: 17%;
+}
+
+.confirm_button_warp_active{
+    width: 100%;
+    height: 12%;
+}
