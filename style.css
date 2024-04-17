@@ -125,9 +125,73 @@ html body .Main{
     font-family: "Gill Sans", sans-serif;
 }
 
+/* Formulaire de connexion */
 .connection_form{
+    position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.close_icon_wrap{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.close_icon{
+    color: white;
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.close_icon:hover{
+    background-color: #ecf0f62f;
+}
+
+.input_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.input_mail, .input_password{
+    width: 100%;
+    margin: 10px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: rgba(160, 151, 151, 0.26);
+}
+
+.input_mail:focus, .input_password:focus{
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.connection_form h1, .connection_form h4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.connection_form h4 span{
+    color: grey;
+}
+
+/* Formulaire d'inscription */
+.register_form{
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    left: 100%;
 }
 
 .connection_title_wrap{
@@ -137,15 +201,7 @@ html body .Main{
     transition: all 0.7s;
 }
 
-.connection_title{
-    color: white;
-}
-
 .connection_popup_active{
     width: 25%;
     height: 50%;
-}
-
-.connection_title_wrap_active{
-    width: 100px;
 }
