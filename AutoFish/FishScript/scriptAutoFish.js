@@ -5,19 +5,19 @@ const navContactButton = document.getElementById("navContactButton");
 const navLogo = document.getElementById("logo");
 
 navAccueilButton.addEventListener("click", (event) => {
-    document.location.href="/AutoFish/Autofish.html";
+    document.location.href="/solidtech/AutoFish/AutoFish.html";
 });
 
 navShopButton.addEventListener("click", (event) => {
-    document.location.href="/AutoFish/OtherFishPages/Shop.html";
+    document.location.href="/solidtech/AutoFish/OtherFishPages/Shop.html";
 });
 
 navNosProjetsButton.addEventListener("click", (event) => {
-    document.location.href="/AutoFish/OtherFishPages/NosProjets.html";
+    document.location.href="/solidtech/AutoFish/OtherFishPages/NosProjets.html";
 });
 
 navContactButton.addEventListener("click", (event) => {
-    document.location.href="/AutoFish/OtherFishPages/Contact.html";
+    document.location.href="/solidtech/AutoFish/OtherFishPages/Contact.html";
 });
 
 navLogo.addEventListener("click", (event) => {
