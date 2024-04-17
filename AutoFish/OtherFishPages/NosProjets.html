@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Autofish.css">
+    <link rel="stylesheet" href="/solidtech/AutoFish/Autofish.css">
     <title>Accueil</title>
 </head>
 <body>
     <div class="Main">
         <div class="header">
-            <div class="logo">
+            <div id="logo" class="logo">
                   <ion-icon class="logo-docker" name="logo-docker"></ion-icon>
                   
                 <p>AutoFish</p>
@@ -21,16 +21,55 @@
                     <li id="navNosProjetsButton"><p>Nos projets</p></li>
                     <li id="navContactButton"><p>Contact</p></li>
                 </ul>
+                <div class="search_connection">
+                    <ion-icon class="search_icon" name="search"></ion-icon>
+                    <ion-icon id="connection_icon" class="connection_icon" name="person"></ion-icon>
             </div>
-            <div class="search_connection">
-                <ion-icon class="search_icon" name="search"></ion-icon>
-                <ion-icon class="connection_icon" name="person"></ion-icon>
+          
+            <div id="connection_popup" class="connection_popup">
+            
+                <form class="connection_form" action="">
+    
+                    <div id="connection_header" class="connection_header">
+                        <div class="div_for_center"></div>
+    
+                        <div id="connection_title_wrap" class="connection_title_wrap">
+                            <h1 class="connection_title">Login</h1>
+                        </div>
+    
+                        <div id="cross_icon" class="connection_cross">
+                            <ion-icon class="close_icon" name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+    
+                    
+    
+                    <div id="connection_mail_inputs" class="mail_input inputs">
+                        <input class="input_mail" type="email">
+                        <label class="placeholder">Mail</label>
+                    </div>
+                    <div id="connection_password_inputs" class="password_input inputs">
+                        <input class="input_password" type="password" required>
+                        <label class="placeholder">Mot de passe</label>
+                    </div>
+    
+                    <div id="register_wrap" class="register_wrap">
+                        <p>Vous avez déjà un compte? <span class="register">Inscrivez-vous !</span></p>
+                    </div>
+    
+                    <div id="confirm_button_warp" class="confirm_button_warp">
+                        <ion-icon class="confirm_button" name="play-outline"></ion-icon>
+                    </div>
+                    
+                </form>
             </div>
+    
         </div>
-    </div>
-</body>
-<script src="/AutoFish/FishScript/connectionPopup.js"></script>
-<script src="/AutoFish/FishScript/scriptAutoFish.js"></script>
+    </body>
+
+
+    <script src="/solidtech/AutoFish/FishScript/connectionPopup.js"></script>
+    <script src="/solidtech/AutoFish/FishScript/scriptAutoFish.js"></script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
