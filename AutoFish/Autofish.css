@@ -26,9 +26,6 @@ html body .Main{
     height: 70px;
     background-color: rgba(34, 134, 34, 0.301);
     border-radius: 0 0 12px 12px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .logo{
@@ -38,13 +35,13 @@ html body .Main{
     cursor: pointer;
     font-size: 40px;
     color: white;
+    margin: 35px;
 }
 
 .nav{
-    height: 75%;
-    width: auto;
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -161,7 +158,7 @@ html body .Main{
     height: 0;
     background-color: rgba(106, 124, 139, 0.281);
     backdrop-filter: blur(20px);
-    border-radius: 25px;
+    border-radius: 50px;
     overflow: hidden;
     font-family: "Gill Sans", sans-serif;
 }
@@ -204,7 +201,7 @@ html body .Main{
 }
 
 .close_icon:hover{
-    background-color: rgba(75, 115, 148, 0.651);
+    background-color: rgba(20, 114, 70, 0.521);
 }
 
 .connection_title_wrap{
@@ -220,8 +217,8 @@ html body .Main{
 
 .inputs{
     position: relative;
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,16 +283,16 @@ html body .Main{
     height: 100%;
     width: 90%;
     cursor: pointer;
-    border: 2px solid rgba(106, 124, 139, 0.651);
+    border: 2px solid rgba(20, 114, 70, 0.521);
 }
 
 .confirm_button:hover{
-    background-color: rgba(106, 124, 139, 0.651);
+    background-color: rgba(20, 114, 70, 0.521);
 }
 
 .connection_popup_active{
     width: 25%;
-    height: 35%;
+    height: 50%;
 }
 
 .connection_cross_active{
