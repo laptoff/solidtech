@@ -130,6 +130,9 @@ html body .Main{
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .close_icon_wrap{
@@ -140,6 +143,7 @@ html body .Main{
 }
 
 .close_icon{
+    position: absolute;
     color: white;
     margin: 5px;
     font-size: 30px;
@@ -165,13 +169,22 @@ html body .Main{
     height: 30px;
     outline: none;
     border: none;
-    border-bottom: 1px solid grey;
-    background-color: rgba(160, 151, 151, 0.26);
+    border-bottom: 1px solid white;
+    background-color: transparent;
+}
+
+.input_mail::placeholder, .input_password::placeholder{
+    color: white;
+    text-align: center;
 }
 
 .input_mail:focus, .input_password:focus{
     text-align: center;
     border-bottom: 1px solid white;
+}
+
+.connection_title h1{
+    text-align: center;
 }
 
 .connection_form h1, .connection_form h4{
@@ -182,7 +195,26 @@ html body .Main{
 }
 
 .connection_form h4 span{
-    color: grey;
+    color: rgb(216, 104, 13);
+    cursor: pointer;
+}
+
+.connection_form h4 span:hover{
+    text-decoration: underline;
+}
+
+.connection_button_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connection_button{
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
 }
 
 /* Formulaire d'inscription */
