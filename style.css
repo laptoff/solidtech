@@ -7,7 +7,7 @@ html body{
     border-color: rgb(178, 189, 159);
     height: 100vh;
     background-color: rgb(178, 189, 159);
-    font-family:  'Brush Script MT', cursive;
+    font-family:  Century Gothic Std,arial,sans-serif;
 }
 html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     display: none;
@@ -132,23 +132,26 @@ html body .Main{
     height: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .close_icon_wrap{
     position: absolute;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: end;
+    align-items: start;
+    z-index: 4;
+    pointer-events: none;
 }
 
 .close_icon{
-    position: absolute;
     color: white;
     margin: 5px;
     font-size: 30px;
     cursor: pointer;
     border-radius: 50%;
+    pointer-events: all;
 }
 
 .close_icon:hover{
@@ -156,11 +159,14 @@ html body .Main{
 }
 
 .input_wrap{
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .input_mail, .input_password{
@@ -183,11 +189,23 @@ html body .Main{
     border-bottom: 1px solid white;
 }
 
-.connection_title h1{
+.header_title{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.connection_title{
+    position: absolute;
     text-align: center;
 }
 
-.connection_form h1, .connection_form h4{
+.connection_form h1{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -199,22 +217,64 @@ html body .Main{
     cursor: pointer;
 }
 
+.inscription_text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.inscription_text h4{
+    position: absolute;
+    z-index: 3;
+    pointer-events: all;
+}
+
 .connection_form h4 span:hover{
     text-decoration: underline;
 }
 
 .connection_button_wrap{
     width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
 .connection_button{
-    border: none;
+    position: absolute;
+    border: solid 2px white;
     cursor: pointer;
-    width: 50%;
-    height: 50px;
+    width: auto;
+    height: 25px;
+    background: none;
+    color: white;
+    font-family: Century Gothic Std,arial,sans-serif;
+    overflow: hidden;
+}
+
+.connection_button::before{
+    content: "";
+    border-radius: 30%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.connection_button:hover::before{
+    top: 0;
+    border-radius: 0;
 }
 
 /* Formulaire d'inscription */
