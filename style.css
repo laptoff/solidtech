@@ -159,24 +159,24 @@ html body .Main{
 }
 
 .input_wrap{
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
     align-items: center;
     justify-content: center;
 }
 
 .input_mail, .input_password{
     width: 100%;
-    margin: 10px;
     height: 30px;
     outline: none;
     border: none;
     border-bottom: 1px solid white;
     background-color: transparent;
+}
+
+.blank_input{
+    width: 100%;
+    height: 50px;
 }
 
 .input_mail::placeholder, .input_password::placeholder{
@@ -239,37 +239,33 @@ html body .Main{
     text-decoration: underline;
 }
 
-.connection_button_wrap{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
 .connection_button{
-    position: absolute;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid 2px white;
     cursor: pointer;
-    width: auto;
+    width: 100px;
     height: 25px;
     background: none;
-    color: white;
+    color: black;
     font-family: Century Gothic Std,arial,sans-serif;
     overflow: hidden;
+    z-index: 0;
 }
 
 .connection_button::before{
-    content: "";
-    border-radius: 30%;
     position: absolute;
+    content: "";
+    border-radius: 50% 50% 0 0;
     top: 100%;
     left: 0;
-    width: 100%;
-    height: 150%;
+    height: 25px;
+    width: 100px;
     background-color: white;
     transition: all 0.5s;
+    z-index: -1;
 }
 
 .connection_button:hover::before{
@@ -295,5 +291,5 @@ html body .Main{
 
 .connection_popup_active{
     width: 25%;
-    height: 50%;
+    height: 40%;
 }
