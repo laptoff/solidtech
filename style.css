@@ -117,22 +117,27 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 
 /* Formulaire de connexion */
 .connection_form{
-    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connection_header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
+.blank_title{
+    width: 50px;
+}
+
 .close_icon_wrap{
-    position: absolute;
-    height: 100%;
-    width: 100%;
     display: flex;
-    justify-content: end;
-    align-items: start;
-    z-index: 4;
-    pointer-events: none;
 }
 
 .close_icon{
@@ -148,15 +153,26 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     background-color: #ecf0f62f;
 }
 
+.header_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connection_title{
+    text-align: center;
+}
+
 .input_wrap{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .input_mail, .input_password{
-    width: 100%;
+    width: 90%;
     height: 30px;
     outline: none;
     border: none;
@@ -170,29 +186,17 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 }
 
 .input_mail::placeholder, .input_password::placeholder{
-    color: white;
+    color: rgb(21, 21, 26);
     text-align: center;
+}
+
+.input_mail:focus::placeholder, .input_password:focus::placeholder{
+    color: transparent;
 }
 
 .input_mail:focus, .input_password:focus{
     text-align: center;
     border-bottom: 1px solid white;
-}
-
-.header_title{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.connection_title{
-    position: absolute;
-    text-align: center;
 }
 
 .connection_form h1{
@@ -203,30 +207,31 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 }
 
 .connection_form h4 span{
-    color: rgb(216, 104, 13);
+    color: rgb(21, 21, 26);
     cursor: pointer;
 }
 
 .inscription_text{
-    position: absolute;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     color: white;
-    z-index: 2;
     pointer-events: none;
-}
-
-.inscription_text h4{
-    position: absolute;
-    z-index: 3;
-    pointer-events: all;
+    background-color: blue;
 }
 
 .connection_form h4 span:hover{
     text-decoration: underline;
+}
+
+.button{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: centrer;
+    background-color: red;
 }
 
 .connection_button{
@@ -239,7 +244,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     width: 100px;
     height: 25px;
     background: none;
-    color: black;
+    color: rgb(21, 21, 26);
     font-family: Century Gothic Std,arial,sans-serif;
     overflow: hidden;
     z-index: 0;
