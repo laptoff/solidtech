@@ -4,9 +4,7 @@
 }
 
 html body{
-    margin: 0 5px 5px 5px;
-    border-color: rgb(0, 0, 0);
-    height: 100vh;
+    margin: 0 5px 0 5px;
     background-color: rgb(0, 0, 0);
     font-family:  'Brush Script MT', cursive;
 }
@@ -19,8 +17,8 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-color: rgb(179, 179, 179);
     border-radius: 0 0 5px 5px;
     justify-content: space-between; 
@@ -136,10 +134,11 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     transition: all 0.5s;
     width: 0;
     height: 0;
-    background-color: rgba(5, 5, 5, 0.281);
+    background-color: rgba(5, 5, 5, 0.541);
     backdrop-filter: blur(20px);
     border-radius: 25px;
     overflow: hidden;
+    
 }
 
 .connection_form{
@@ -171,15 +170,16 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 }
 
 .close_icon{
-    background-color: rgb(56, 56, 165);
+    background-color: rgba(0, 0, 0, 0.685);
     border-bottom-left-radius: 10px;
     height: 100%;
     width: 50%;
     cursor: pointer;
+    color: rgb(255,255,255);
 }
 
 .close_icon:hover{
-    background-color: rgb(56, 56, 165);
+    background-color: rgba(0, 0, 0, 0.685);
 }
 
 .connection_title_wrap{
@@ -208,16 +208,18 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgb(56, 56, 165);
+    border: 2px solid rgba(0, 0, 0, 0.685);
     border-radius: 15px;
-    padding: 2.5px 20px 2.5px 10px;  
-    cursor: url("cursor\ text\ .webp");
+    padding: 2.5px 20px 2.5px 10px;
+    color: white;
+    text-align: center;
 }
 
 .inputs input::placeholder{
     text-align: center;
     color: white;
     font-family: 'Brush Script MT', cursive;
+    font-size: 19px;
 }
 
 .inputs input:focus{
@@ -239,24 +241,35 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     cursor: pointer;
 }
 
+.input_mail:focus::placeholder, .input_password:focus::placeholder{
+    color: transparent;
+}
+
+.input_mail:focus, .input_password:focus{
+    color: white;
+}
+    
 .confirm_button_warp{
     width: 0;
     height: 0;
     display: flex;
     justify-content: end;
     transition: all 0.7s;
+    color: rgb(255, 255, 255);
+    justify-content: center;
 }
 
 .confirm_button{
-    background-color: rgb(56, 56, 165);
-    border-top-left-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.685);
     height: 100%;
-    width: 12%;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .confirm_button:hover{
-    background-color: rgb(48, 48, 114);
+    background-color: rgba(0, 0, 0, 0.808);
 }
 
 .connection_popup_active{
@@ -285,11 +298,11 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 
 .confirm_button_warp_active{
     width: 100%;
-    height: 12%;
+    height: 13%;
 }
 
 .robot{
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0);
     margin-top: 10%;
     width: 100%;
     height: 90%;
@@ -298,11 +311,10 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     justify-content: space-between;
 }
 
-.left_ad{
+.ad{
     background-color: aqua;
     width: 10%;
     height: 85%;
-    
 }
 
 .middle{
@@ -312,14 +324,8 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     
 }
 
-.right_ad{
-    background-color: aqua;
-    width: 10%;
-    height: 85%;
-}
-
 .AutoFish{
-    width: 100%;
+    width: 80%;
     height: 30%;
     margin-top: 10%;
 }
