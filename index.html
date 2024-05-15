@@ -7,58 +7,59 @@
     <title>SolidTech - Accueil</title>
 </head>
 <body>
-    <div class="Main">
-        <div class="header">
-            <div id="logo" class="logo">
-                <ion-icon class="logo_icon" name="hardware-chip-outline"></ion-icon>
-                <h1 class="title_logo">SolidTech</h1>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li id="navHomeButton"><p>Accueil</p></li>
-                    <li id="navStoreButton"><p>Store</p></li>
-                    <li id="navProjectsButton"><p>Nos projets</p></li>
-                    <li id="navContactButton"><p>Contact</p></li>
-                </ul>
-            </div>
-            <div class="search_connection">
-                <ion-icon class="search_icon" name="search"></ion-icon>
-                <ion-icon id="connection_icon" class="connection_icon" name="person"></ion-icon>
-            </div>
+    <div class="header">
+        <div id="logo" class="logo">
+            <ion-icon class="logo_icon" name="hardware-chip-outline"></ion-icon>
+            <h1 class="title_logo">SolidTech</h1>
         </div>
+        <div class="nav">
+            <ul>
+                <li id="navHomeButton"><ion-icon name="home-outline"></ion-icon></li>
+                <li id="navStoreButton"><ion-icon name="storefront-outline"></ion-icon></li>
+                <li id="navProjectsButton"><ion-icon name="code-working-outline"></ion-icon></li>
+                <li id="navContactButton"><ion-icon name="pricetag-outline"></ion-icon></li>
+            </ul>
+        </div>
+        <div class="search_connection">
+            <ion-icon class="search_icon" name="search"></ion-icon>
+            <ion-icon id="connection_icon" class="connection_icon" name="person"></ion-icon>
+        </div>
+    </div>
+    <div id="connection_popup" class="connection_popup">
+        
+        <form class="connection_form" action="">
 
-        <div id="connection_popup" class="connection_popup">
+            <div class="connection_header">
+                <div class="blank_title"></div>
+                <div class="header_title">
+                    <h1 class="connection_title">Connexion</h1>
+                </div>
+                <div class="close_icon_wrap">
+                    <ion-icon class="close_icon" name="close-circle-outline"></ion-icon>
+                </div>
+            </div>
+
             
-            <form class="connection_form" action="">
+            <div class="input_wrap">
+                <input class="input_mail" placeholder="Mail" type="mail" required>
+                <div class="blank_input"></div>
+                <input class="input_password" placeholder="Mot de Passe" type="password" required>
 
-                <div class="connection_header">
-                    <div class="close_icon_wrap">
-                        <ion-icon class="close_icon" name="close-circle-outline"></ion-icon>
-                    </div>
-
-                </div>
-
-                <h1>Connexion</h1>
-
-                <div class="input_wrap">
-                    <input class="input_mail" placeholder="Mail" type="mail" required>
-                    <input class="input_password" placeholder="Mot de Passe" type="password" required>
-                </div>
-
-                <h4>Vous n'avez pas de comptes ? <span> Inscrivez-vous !</span></h4>
-
-                <div class="connection_button_wrap">
+                <div class="button">
                     <button class="connection_button">Connexion</button>
                 </div>
-                
-            </form>
 
-            <form class="register_form" action="">
-                
-            </form>
-        </div>
+                <div class="inscription_text">
+                    <h4>Vous n'avez pas de comptes ? <span> Inscrivez-vous !</span></h4>
+                </div>
 
+            </div>
+        </form>
+        <form class="register_form" action="">
+            
+        </form>
     </div>
+
 </body>
 
 <script src="/mainScripts/connectionPopup.js"></script>
