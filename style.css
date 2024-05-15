@@ -67,7 +67,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     height: 75%;
     width:100px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: .25s;
     font-size: 25px;
 }
 
