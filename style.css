@@ -25,6 +25,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(20px);
+    transition: all .25s;
 }
 
 .logo{
@@ -39,6 +40,15 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 .logo_icon, .title_logo{
     font-size: 225%;
     color: white;
+}
+
+.title_logo_wrap{
+    overflow: hidden;
+}
+
+#title_logo{
+    position: relative;
+    transition: all .25s;
 }
 
 .nav{
@@ -62,12 +72,10 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     justify-content: center;
     align-items: center;
     margin: 0 5px 0 5px;
-    padding: 0 20px 0 20px;
+    padding: 10px;
     color: white;
-    height: 75%;
-    width:100px;
     cursor: pointer;
-    transition: .25s;
+    /* transition: .25s; */
     font-size: 25px;
 }
 
@@ -84,18 +92,56 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     align-items: center;
 }
 
-.search_icon, .connection_icon{
+.search_wrap{
+    position: relative;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_input{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: transparent;
+    border-radius: 50px;
+    background-color: #3d3d3d;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.search_input:hover{
+    background-color: rgba(128, 128, 128, 0.219);
+}
+
+.search_icon{
+    position: absolute;
+    left: 10px;
     color: white;
     font-size: 200%;
     cursor: pointer;
-    padding: 5px 20px 5px 20px;
+    z-index: 2;
+}
+
+.connection_icon{
+    color: white;
+    font-size: 200%;
+    cursor: pointer;
+    /* padding: 5px 20px 5px 20px; */
     margin-right: 10px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .search_icon:hover{
     background-color: rgba(128, 128, 128, 0.219);
-    border-radius: 8px;
+    border-radius: 25%;
 }
 
 .connection_icon:hover{

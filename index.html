@@ -7,10 +7,12 @@
     <title>SolidTech - Accueil</title>
 </head>
 <body>
-    <div class="header">
+    <div id="header" class="header">
         <div id="logo" class="logo">
             <ion-icon class="logo_icon" name="hardware-chip-outline"></ion-icon>
-            <h1 class="title_logo">SolidTech</h1>
+            <div class="title_logo_wrap">
+                <p id="title_logo" class="title_logo" >SolidTech</p>
+            </div>
         </div>
         <div class="nav">
             <ul>
@@ -21,7 +23,10 @@
             </ul>
         </div>
         <div class="search_connection">
-            <ion-icon class="search_icon" name="search"></ion-icon>
+            <div class="search_wrap">
+                <input id="search_input" class="search_input">
+                <ion-icon id="search_logo" class="search_icon" name="search"></ion-icon>
+            </div>
             <ion-icon id="connection_icon" class="connection_icon" name="person"></ion-icon>
         </div>
     </div>
