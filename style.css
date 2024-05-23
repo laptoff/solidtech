@@ -272,13 +272,12 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     text-decoration: underline;
 }
 
-.button{
+.button_wrap{
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: centrer;
-    background-color: red;
+    justify-content: center;
 }
 
 .connection_button{
