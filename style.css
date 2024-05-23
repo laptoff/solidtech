@@ -264,8 +264,6 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     justify-content: center;
     align-items: center;
     color: white;
-    pointer-events: none;
-    background-color: blue;
 }
 
 .connection_form h4 span:hover{
