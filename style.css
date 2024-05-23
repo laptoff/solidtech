@@ -115,6 +115,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     z-index: 1;
     text-align: center;
     color: white;
+    cursor: default;
 }
 
 .search_input:hover{

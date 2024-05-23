@@ -34,6 +34,14 @@ searchLogo.addEventListener("click", (event) => {
     searchInput.focus();
 });
 
+searchInput.addEventListener("focusin", (event) => {
+    searchInput.style.cursor="text";
+});
+
+searchInput.addEventListener("focusout", (event) => {
+    searchInput.style.cursor="default";
+});
+
 //scroll event
 window.addEventListener("scroll", (event) => {
     scrollPosition = window.scrollY;
