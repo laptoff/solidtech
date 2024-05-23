@@ -21,5 +21,5 @@ navContactButton.addEventListener("click", (event) => {
 });
 
 navLogo.addEventListener("click", (event) => {
-    document.location.href="../index.html";
+    document.location.href="/solidtech/index.html";
 });

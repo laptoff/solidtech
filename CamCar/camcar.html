@@ -26,7 +26,7 @@
                 </div>
 
                 <div id="connection_mail_inputs" class="mail_input inputs">
-                    <input class="input_mail" type="email" placeholder="Mail">
+                    <input class="input_mail" type="email" placeholder="Mail" required>
                 </div>
                 <div id="connection_password_inputs" class="password_input inputs">
                     <input class="input_password" type="password" placeholder="Mot de passe" required>
@@ -37,7 +37,10 @@
                 </div>
 
                 <div id="confirm_button_warp" class="confirm_button_warp">
-                <ion-icon class="confirm_button" name="play-outline"></ion-icon>
+                    <button>
+                        <ion-icon class="confirm_button" name="play-outline"></ion-icon>
+                   </button>
+                   
                 </div>
             
             </form>
@@ -51,11 +54,26 @@
                 <h1>SolidTech</h1>
             </div>
             <div class="nav">
-                <ul>
+                <ul class="navbar">
                     <li id="navHomeButton"><p>Accueil</p></li>
+                    
+                    
                     <li id="navStoreButton"><p>Store</p></li>
+                        <ul class="navStore" ></ul>
+                            <li><a href="/otherPages/store.html"></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    
                     <li id="navProjectsButton"><p>Nos projets</p></li>
+                        <ul class="navProjects">
+                            <li><a href="/otherPages/projects.html"></a></li>
+                            <li><a href="/CamCar/"></a></li>
+                            <li><a href="/AutoFish/"></a></li>
+                        </ul>
+                    
                     <li id="navContactButton"><p>Contact</p></li>
+                        
                 </ul>
             </div>
             <div class="search_connection">
@@ -65,7 +83,7 @@
         </div>
        
         <div class = "robot"> 
-            <div class = "left_ad">
+            <div class = "ad left_ad">
                 <img class = AutoFish src="image/aquarium.jpg">
             </div>
 
@@ -73,7 +91,7 @@
 
             </div>
 
-            <div class = "right_ad">
+            <div class = "ad right_ad">
 
             </div>  
         </div>
