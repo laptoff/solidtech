@@ -204,6 +204,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .connection_title{
@@ -218,6 +219,14 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     width: 100%;
 }
 
+.input_mail_wrap, .input_password_wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .input_mail, .input_password{
     width: 90%;
     height: 30px;
@@ -227,18 +236,36 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     background-color: transparent;
 }
 
+.mail_placeholder{
+    position: absolute;
+    color: white;
+    transition: all .5s;
+}
+
+.password_placeholder{
+    position: absolute;
+    color: white;
+    transition: all .5s;
+}
+
 .blank_input{
     width: 100%;
     height: 50px;
 }
 
 .input_mail::placeholder, .input_password::placeholder{
-    color: rgb(21, 21, 26);
+    position: relative;
+    color: white;
     text-align: center;
+    transition: all .5s;
 }
 
-.input_mail:focus::placeholder, .input_password:focus::placeholder{
-    color: transparent;
+.input_mail:focus + .mail_placeholder, .input_password:focus + .password_placeholder{
+    bottom: 100%;
+}
+
+.input_password:focus::placeholder{
+    bottom: 20px;
 }
 
 .input_mail:focus, .input_password:focus{
@@ -329,13 +356,13 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 }
 
 /* Formulaire d'inscription */
-.register_form{
+/* .register_form{
     position: absolute;
     background-color: red;
     width: 100%;
     height: 100%;
     left: 100%;
-}
+} */
 
 .connection_title_wrap{
     width: 0;
