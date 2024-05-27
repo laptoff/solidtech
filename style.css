@@ -158,7 +158,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     background-color: rgba(106, 124, 139, 0.281);
     backdrop-filter: blur(20px);
     border-radius: 25px;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: "Gill Sans", sans-serif;
 }
 
@@ -219,7 +219,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     width: 100%;
 }
 
-.input_mail_wrap, .input_password_wrap{
+.input_mail_wrap, .input_password_wrap, .input_confirm_wrap{
     position: relative;
     display: flex;
     align-items: center;
@@ -227,7 +227,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     width: 100%;
 }
 
-.input_mail, .input_password{
+.input_mail, .input_password, .input_confirm{
     width: 90%;
     height: 30px;
     outline: none;
@@ -250,27 +250,23 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     pointer-events: none;
 }
 
+.confirm_placeholder{
+    position: absolute;
+    color: white;
+    transition: all .5s;
+    pointer-events: none;
+}
+
 .blank_input{
     width: 100%;
     height: 50px;
 }
 
-.input_mail::placeholder, .input_password::placeholder{
-    position: relative;
-    color: white;
-    text-align: center;
-    transition: all .5s;
-}
-
-.input_mail:focus + .mail_placeholder, .input_password:focus + .password_placeholder{
+.input_mail:focus + .mail_placeholder, .input_password:focus + .password_placeholder, .input_confirm:focus + .confirm_placeholder{
     bottom: 100%;
 }
 
-.input_password:focus::placeholder{
-    bottom: 20px;
-}
-
-.input_mail:focus, .input_password:focus{
+.input_mail:focus, .input_password:focus, .input_confirm:focus{
     text-align: center;
     border-bottom: 1px solid white;
 }
@@ -358,13 +354,18 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 }
 
 /* Formulaire d'inscription */
-/* .register_form{
+.register_form{
     position: absolute;
-    background-color: red;
+    background: red;
     width: 100%;
     height: 100%;
-    left: 100%;
-} */
+    top: 100%;
+    z-index: 10;
+}
+
+.inscription_title{
+    color: white;
+}
 
 .connection_title_wrap{
     width: 0;
