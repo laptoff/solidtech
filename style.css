@@ -133,10 +133,10 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 
 .connection_icon{
     color: white;
-    font-size: 200%;
+    font-size: 25px;
     cursor: pointer;
-    /* padding: 5px 20px 5px 20px; */
-    margin-right: 10px;
+    padding: 10px;
+    margin: 0 5px 0 5px;
     /* transition: 0.5s; */
 }
 
