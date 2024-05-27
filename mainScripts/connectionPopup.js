@@ -5,6 +5,7 @@ const inputsMail = document.getElementById("connection_mail_inputs");
 const inputsPassword = document.getElementById("connection_password_inputs");
 const registerWrap = document.getElementById("register_wrap");
 const confirmButton = document.getElementById("confirm_button_warp");
+const closeIcon = document.getElementById("close_icon");
 
 window.addEventListener("keydown", function(e) {
     if (e.key == "Escape") {
@@ -24,4 +25,8 @@ connectionButton.addEventListener("click", (event) => {
     inputsPassword.classList.add("inputs_active");
     registerWrap.classList.add("register_wrap_active");
     confirmButton.classList.add("confirm_button_warp_active");
+});
+
+closeIcon.addEventListener("click", (event) => {
+    connectionPopup.classList.remove("connection_popup_active");
 });
