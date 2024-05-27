@@ -240,12 +240,14 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     position: absolute;
     color: white;
     transition: all .5s;
+    pointer-events: none;
 }
 
 .password_placeholder{
     position: absolute;
     color: white;
     transition: all .5s;
+    pointer-events: none;
 }
 
 .blank_input{
