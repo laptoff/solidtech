@@ -158,7 +158,7 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     background-color: rgba(106, 124, 139, 0.281);
     backdrop-filter: blur(20px);
     border-radius: 25px;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-family: "Gill Sans", sans-serif;
 }
 
@@ -309,62 +309,38 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
     align-items: center;
     justify-content: center;
     border: solid 2px white;
+    color: white;
     cursor: pointer;
     width: 100px;
     height: 25px;
     background: none;
-    color: rgb(21, 21, 26);
     font-family: Century Gothic Std,arial,sans-serif;
     overflow: hidden;
     z-index: 0;
 }
 
-.connection_button::before{
-    position: absolute;
-    content: "";
-    border-radius: 50% 50% 0 0;
-    top: 100%;
-    height: 25px;
-    width: 100px;
-    background-color: white;
-    transition: all .5s;
-    z-index: -1;
-}
-
-.connection_button:hover::before{
-    top: 0;
-    border-radius: 0;
-}
-
-.connection_button::after{
-    position: absolute;
-    content: "";
-    border-radius: 50% 50% 0 0;
-    bottom: 100%;
-    height: 25px;
-    width: 100px;
-    background-color: white;
-    transition: all 0.5s;
-    z-index: -1;
-}
-
-.connection_button:hover::after{
-    bottom: 0;
-    border-radius: 0;
+.connection_button:hover{
+    box-shadow: 0 0 2em white;
 }
 
 /* Formulaire d'inscription */
 .register_form{
     position: absolute;
-    background: red;
     width: 100%;
-    height: 100%;
+    height: 220%;
     top: 100%;
+    background-color: rgb(21, 21, 26);
+    backdrop-filter: blur(20px);
     z-index: 10;
+    transition: all .5s;
 }
 
 .inscription_title{
     color: white;
+}
+
+.register_header{
+    margin-top: 0;
 }
 
 .connection_title_wrap{
@@ -377,4 +353,12 @@ html body::-webkit-scrollbar{ /*disable scrollbar for chromium*/
 .connection_popup_active{
     width: 25%;
     height: 40%;
+}
+
+.register_form_active{
+    top: 0%;
+}
+
+.connection_form_unactive{
+    display: none;
 }

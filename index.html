@@ -32,11 +32,11 @@
     </div>
     <div id="connection_popup" class="connection_popup">
         
-        <form class="connection_form" action="">
+        <form class="connection_form" id="connection_form" action="">
 
             <div class="connection_header">
                 <div class="blank_title"></div>
-                <div class="header_title">
+                <div class="header_title_wrap" id="connection_title_wrap">
                     <h1 class="connection_title">Connexion</h1>
                 </div>
                 <div class="close_icon_wrap">
@@ -65,20 +65,20 @@
                 </div>
 
                 <div class="inscription_text">
-                    <h4>Vous n'avez pas de comptes ? <span> Inscrivez-vous !</span></h4>
+                    <h4>Vous n'avez pas de comptes ? <span id="register_link"> Inscrivez-vous !</span></h4>
                 </div>
 
             </div>
         </form>
 
-        <form class="register_form" action="">
-            <div class="connection_header">
+        <form class="register_form" id="register_form" action="">
+            <div class="connection_header register_header">
                 <div class="blank_title"></div>
                 <div class="header_title">
                     <h1 class="inscription_title">Inscription</h1>
                 </div>
                 <div class="close_icon_wrap">
-                    <ion-icon class="close_icon" id="close_icon" name="close-circle-outline"></ion-icon>
+                    <ion-icon class="close_icon" id="close_icon_register" name="close-circle-outline"></ion-icon>
                 </div>
             </div>
 
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="inscription_text">
-                    <h4>Vous avez déjà un compte ? <span> Connectez-vous !</span></h4>
+                    <h4>Vous avez déjà un compte ? <span id="connection_link"> Connectez-vous !</span></h4>
                 </div>
 
             </div>
